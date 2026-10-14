@@ -1,0 +1,35 @@
+/* 1. Усі посилання – фіолетові (селектор тегу) */
+a {
+    color: purple;
+}
+
+/* 2. Лише пункти головного меню – зелені (селектор класу) */
+.main {
+    color: green;
+}
+
+/* 5. Прибрати маркери у вкладених списках (комбінатор нащадків трьох тегів) */
+ul li ul {
+    list-style: none;
+}
+
+/* 4. Другий вкладений список – піктограма (селектор класу) */
+.vegetables {
+    list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M2 8.5l4 4 8-9' fill='none' stroke='%23444' stroke-width='2.5'/%3E%3C/svg%3E");
+}
+
+/* 3. Останній вкладений список – квадрат (селектор класу) */
+.berries {
+    list-style-type: square;
+}
+
+/* 6. Без підкреслення посилань в останньому списку (клас + тег) */
+.berries a {
+    text-decoration: none;
+}
+
+/* 7. Блок «Різне»: маркери/нумерація всередині (селектор тегу) */
+ol {
+    list-style-position: inside;
+    font-size: 14px;
+}

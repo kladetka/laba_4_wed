@@ -1,0 +1,63 @@
+body {
+    font-size: 14px;
+}
+
+/* 1. span усередині p.text-background (клас + тег) */
+.text-background span {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 2. span усередині .text-background, що знаходиться в div (тег, клас, тег) */
+div .text-background span {
+    background-color: yellow;
+}
+
+/* 3. span усередині span (два теги) */
+span span {
+    background-color: gray;
+    text-decoration: line-through;
+}
+
+/* 4. span усередині span усередині нумерованого списку (три теги) */
+ol span span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* 5. Абзаци – прямі діти section (дочірній комбінатор) */
+section > p {
+    text-shadow: 3px 3px 5px #cc0000;
+    text-indent: 50px;
+}
+
+/* 6. ul, що є безпосереднім дочірнім елементом li */
+li > ul {
+    list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M2 8.5l4 4 8-9' fill='none' stroke='%23444' stroke-width='2.5'/%3E%3C/svg%3E");
+}
+
+/* 7. p.text-background – прямі діти div (тег та клас) */
+div > p.text-background {
+    word-spacing: 50px;
+}
+
+/* 8. Абзаци – прямі діти div.text-bold (клас та тег) */
+.text-bold > p {
+    font-weight: bold;
+}
+
+/* 9. section – прямий нащадок .text-bold, а його абзаци – дочірні */
+.text-bold > section > p {
+    line-height: 45px;
+}
+
+/* 10. Абзац, що йде відразу після img (наступний сусід) */
+img + p {
+    background-color: brown;
+}
+
+/* 11. Усі абзаци-сусіди після section на тому ж рівні (загальний сусід) */
+section ~ p {
+    color: red;
+}

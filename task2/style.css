@@ -1,0 +1,57 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Селектор класу: рамка навколо рецепта */
+.recipe {
+    width: 700px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 1px solid #6a6adf;
+    text-align: center;
+}
+
+/* Селектори тегів */
+h1 {
+    color: #ff0000;
+    font-size: 30px;
+}
+h2 {
+    font-size: 22px;
+    font-style: italic;
+}
+p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 4px 0;
+}
+b {
+    font-weight: 700;
+}
+small {
+    font-size: 14px;
+}
+u {
+    text-decoration: underline;
+}
+del {
+    text-decoration: line-through;
+}
+hr {
+    width: 60%;
+    border: 2px solid green;
+}
+
+/* Селектор класу: жовте виділення */
+.mark {
+    background-color: #ffff00;
+}
+
+/* Селектор класу: заключне речення */
+.note {
+    font-family: "Courier New", monospace;
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #222;
+}
